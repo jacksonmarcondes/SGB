@@ -39,6 +39,27 @@ class Usuario extends Controller
         ]);
     }
 
+    public function editarUsuarioComum(UsuarioModel $usuario) : View{
+        $usuario = UsuarioModel::find(session('codigo_usuario'));
+        $dataHoraAtual = Carbon::now();
+        $multa = 0;
+        $reservasEmAtraso = ReservaModel::whereHas('Emprestimo', function ($q) {
+            $q->where('dataPrevista', '<', Carbon::now());
+        })->where('usuario', session('codigo_usuario'))->pluck('dataReserva');
+
+        if ($reservasEmAtraso->count() > 0) {
+            foreach ($reservasEmAtraso as $reservaEmAtraso){
+                $reservaAtual = Carbon::create($reservaEmAtraso);
+                $multa += $reservaAtual->diff($dataHoraAtual)->days;
+            }
+        }
+        return view('usuario.editarUsuario',[
+            'Usuario' => UsuarioModel::where('codigoUsuario',session('codigo_usuario'))->first(),
+            'UsuarioEditar' => $usuario,
+            'multa'=> $multa
+        ]);
+    }
+
     public function gravaEditarUsuario(Request $request, UsuarioModel $usuario) : RedirectResponse{
         $usuario->fill(
             [
@@ -49,6 +70,16 @@ class Usuario extends Controller
             ]
         )->save();
         return redirect()->route('usuario.listar');
+    }
+
+    public function gravaEditarUsuarioComum(Request $request, UsuarioModel $usuario) : RedirectResponse{
+        $usuario->fill(
+            [
+                'nome'=> $request->nome,
+                'senha'=> md5($request->senha)
+            ]
+        )->save();
+        return redirect()->route('home');
     }
 
     public function inativarUsuario(Request $request, UsuarioModel $usuario) : RedirectResponse {

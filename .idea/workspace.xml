@@ -20,29 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba082506-c5a4-4a59-969b-16b22f47ebad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/usuario/_form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/usuario/editarUsuario.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Emprestimo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Emprestimo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Reserva.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Reserva.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Titulo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Titulo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Usuario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Emprestimo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Emprestimo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Reserva.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Reserva.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Titulo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Titulo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Usuario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_27_235944_add_usuario_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_27_235944_add_usuario_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_27_2360052_add_emprestimo_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_27_2360052_add_emprestimo_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrador/reservas/listarReservas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrador/reservas/listarReservas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrador/titulos/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrador/titulos/_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrador/titulos/editarTitulo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrador/titulos/editarTitulo.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrador/titulos/listarTitulos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrador/titulos/listarTitulos.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrador/usuarios/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrador/usuarios/_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrador/usuarios/listarUsuarios.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrador/usuarios/listarUsuarios.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layoutAdministrador/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layoutAdministrador/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layoutAdministrador/menuLateral.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layoutAdministrador/menuLateral.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layoutUsuario/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layoutUsuario/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/usuario/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/usuario/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,17 +162,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/administrador/titulos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/usuario" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/usuario" />
       <recent name="$PROJECT_DIR$/resources/views/administrador/titulos" />
       <recent name="$PROJECT_DIR$/resources/views/administrador/usuarios" />
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/public/assets/images" />
-      <recent name="$PROJECT_DIR$/public/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/layout" />
@@ -215,7 +198,7 @@
       <updated>1604960057081</updated>
       <workItem from="1604960058592" duration="5919000" />
       <workItem from="1605332425318" duration="3814000" />
-      <workItem from="1606519560984" duration="50773000" />
+      <workItem from="1606519560984" duration="52162000" />
     </task>
     <servers />
   </component>
@@ -239,10 +222,10 @@
       <screen x="0" y="1080" width="1920" height="1080" />
     </state>
     <state x="698" y="1357" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.1080.1920.1080/0.0.1920.1080/1920.1236.1366.768@0.1080.1920.1080" timestamp="1606532629049" />
-    <state x="698" y="1367" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606594824802">
+    <state x="698" y="1367" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606602517975">
       <screen x="0" y="1080" width="1920" height="1080" />
     </state>
-    <state x="698" y="1367" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.1080.1920.1080/0.0.1920.1080/1920.1236.1366.768@0.1080.1920.1080" timestamp="1606594824802" />
+    <state x="698" y="1367" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.1080.1920.1080/0.0.1920.1080/1920.1236.1366.768@0.1080.1920.1080" timestamp="1606602517975" />
     <state x="760" y="1529" key="NewPhpFileDialog" timestamp="1606531130543">
       <screen x="0" y="1080" width="1920" height="1080" />
     </state>

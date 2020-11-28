@@ -50,7 +50,6 @@
                     <a class="btn blue btn-small" href="{{ Route('usuario.editar', ['usuario' => $Usuario]) }}">Alterar dados</a>
                     <a class="btn red btn-small" href="/"> Sair</a>
                 </form>
-
                 </p>
             </div>
         </div>

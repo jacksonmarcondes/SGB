@@ -49,8 +49,12 @@
                         Você possui R$ {{number_format($multa,2,",",".")}} em multas por atraso
                     </div>
                     <div class="col m7 right-align">
-                        <button class="btn blue"> Alterar dados</button>
-                        <a class="btn red" href="/"> Sair</a>
+                        <form method="POST" id="form_excluir" action="{{route('usuario.inativar', ['usuario' => $Usuario])}}" class="form">
+                            <input name="_method" type="hidden" value="PUT">
+                            {{ csrf_field() }}
+                            <a class="btn blue btn-small" href="{{ Route('usuario.comum.editar', ['usuario' => $Usuario]) }}">Alterar dados</a>
+                            <a class="btn red btn-small" href="/"> Sair</a>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -69,6 +73,13 @@
 </div>
 
 <script type="text/javascript" src="{{asset ('js/app.js')}}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="{{asset ('assets/js/materialize.min.js')}}"></script>
+
+<script>
+    $(document).ready(function(){
+        $('select').formSelect();
+    });
+</script>
 </body>
 </html>

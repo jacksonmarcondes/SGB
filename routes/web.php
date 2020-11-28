@@ -49,6 +49,11 @@ Route::prefix('usuarios')->group(function () {
     Route::put('{usuario}',[Usuario::class,'gravaEditarUsuario'])->name('usuario.gravarEdicao');
 });
 
+Route::prefix('usuario')->group(function () {
+    Route::get('{usuario}/editar',[Usuario::class,'editarUsuarioComum'])->name('usuario.comum.editar');
+    Route::put('{usuario}',[Usuario::class,'gravaEditarUsuarioComum'])->name('usuario.comum.gravarEdicao');
+});
+
 Route::prefix('emprestimos')->group(function () {
     Route::put('{reserva}',[Emprestimo::class,'gravaEditarEmprestimo'])->name('emprestimo.gravarEdicao');
 });
