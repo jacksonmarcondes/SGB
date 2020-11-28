@@ -22,22 +22,25 @@
         <div class="card blue-grey lighten-5 hoverable">
             <div class="card-content white-text">
                 <span class="card-title center"><img src="{{asset ('assets/images/Livro.png')}}" alt="Livro"/></span>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input placeholder="Digite seu e-mail" id="email" type="text" class="validate">
-                        <label for="email">E-mail</label>
+                <form method="POST" action="/login">
+                    @csrf
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input placeholder="Digite seu e-mail" id="email" name="email" required type="email" class="validate">
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input placeholder="Digite sua senha" id="senha" name="senha" required type="password" class="validate">
+                            <label for="password">Senha</label>
+                        </div>
+                        <div class="col s12">
+                            <button class="btn btn-login waves-effect waves-light blue-grey lighten-5 z-depth-3" type="submit" name="tipo_acesso" value="usuario"  style="color:#536dfe;">ACESSAR</button>
+                            <br>
+                            <br>
+                            <button class="btn btn-login waves-effect waves-light blue-grey lighten-5 z-depth-3" type="submit" name="tipo_acesso" value="administrador" style="color:#536dfe;">ACESSAR PORTAL ADM</button>
+                        </div>
                     </div>
-                    <div class="input-field col s12">
-                        <input placeholder="Digite sua senha" id="password" type="password" class="validate">
-                        <label for="password">Senha</label>
-                    </div>
-                    <div class="col s12">
-                        <button class="btn btn-login waves-effect waves-light blue-grey lighten-5 z-depth-3" type="submit" name="action" style="color:#536dfe;">ACESSAR</button>
-                        <br>
-                        <br>
-                        <button class="btn btn-login waves-effect waves-light blue-grey lighten-5 z-depth-3" type="submit" name="action" style="color:#536dfe;">ACESSAR PORTAL ADM</button>
-                    </div>
-                </div>
+                </form>
             </div>
 
 
