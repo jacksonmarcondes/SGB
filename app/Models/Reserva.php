@@ -26,4 +26,9 @@ class Reserva extends Model
         return $this->hasOne('App\Models\Titulo', 'codigoLivro', 'titulo');
     }
 
+    public function Emprestimo()
+    {
+        return $this->hasOne('App\Models\Emprestimo', 'reserva', 'codigoReserva');
+    }
+
 }

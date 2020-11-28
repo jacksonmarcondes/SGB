@@ -13,7 +13,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <a href="/titulos/listar">- Listar</a>
+                        <a href="/titulos/listar" style="color: black;  text-decoration: none;">- Listar</a>
                     </td>
                 </tr>
                 </tbody>
@@ -27,7 +27,7 @@
 
                 <tbody>
                 <tr>
-                    <td><a href="/usuarios/listar">- Listar</a></td>
+                    <td><a href="/usuarios/listar" style="color: black;  text-decoration: none;">- Listar</a></td>
                 </tr>
                 </tbody>
             </table>
@@ -40,7 +40,7 @@
 
                 <tbody>
                 <tr>
-                    <td><a href="/reservas/listar">- Listar</a></td>
+                    <td><a href="/reservas/listar" style="color: black;  text-decoration: none;">- Listar</a></td>
                 </tr>
                 </tbody>
             </table>

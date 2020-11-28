@@ -10,13 +10,17 @@
                     <a class="btn blue btn-small" href="{{ Route('titulo.adicionar') }}">Adicionar</a>
                 </div>
             </div>
+            <div class="row">
+                @if(session()->has('message'))
+                    <div class="center"><span class="black-text">{{ session()->get('message') }}</span></div>
+                @endif
+            </div>
             <table>
                 <thead>
                 <tr>
                     <th>Nome</th>
                     <th>Descrição</th>
                     <th>Autor</th>
-                    <th>Status</th>
                     <th class="center">Ação</th>
                 </tr>
                 </thead>
@@ -26,13 +30,11 @@
                         <td>{{$titulo->titulo}}</td>
                         <td>{{$titulo->descricao}}</td>
                         <td>{{$titulo->autor}}</td>
-                        <td>status</td>
                         <td>
                             <form method="POST" id="form_excluir" action="{{route('titulo.excluir', ['Titulo' => $titulo])}}" class="form">
                                 <input name="_method" type="hidden" value="DELETE">
                                 {{ csrf_field() }}
                                 <a class="btn blue btn-small" href="{{ Route('titulo.editar', ['titulo' => $titulo]) }}">Alterar</a>
-                                <a class="btn red btn-small" href="{{ Route('titulo.inativar', ['titulo' => $titulo]) }}">Inativar</a>
                                 <input type="submit" value="Excluir" class="btn red btn-small" />
                             </form>
                         </td>

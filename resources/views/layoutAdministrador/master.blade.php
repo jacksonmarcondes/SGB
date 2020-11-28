@@ -19,9 +19,10 @@
 
 <div class=" row">
     <div class="col m1">
-        <div class="card transparent" >
+        <div class="card transparent z-depth-0" >
             <div class="card-content white-text right-align">
                 <p>
+                    <br>
                     <img src="{{asset ('assets/images/Livro.png')}}" height="50px" width="50px" alt="Livro"/>
                 </p>
             </div>
@@ -29,21 +30,27 @@
 
     </div>
     <div class="col m8">
-        <div class="card transparent">
-            <div class="card-content white-text">
+        <div class="card z-depth-0 transparent"  >
+            <div class="card-content white-text ">
                 <p>
-                <h5>Bem vindo, {{$Usuario->nome}}</h5>
+                <h4>Bem vindo, {{$Usuario->nome}}</h4>
                 </p>
             </div>
         </div>
 
     </div>
     <div class="col m3">
+        <br>
         <div class="card blue-grey lighten-5 hoverable" >
             <div class="card-content white-text right-align">
                 <p>
-                    <button class="btn blue btn-small"> Alterar dados</button>
+                <form method="POST" id="form_excluir" action="{{route('usuario.inativar', ['usuario' => $Usuario])}}" class="form">
+                    <input name="_method" type="hidden" value="PUT">
+                    {{ csrf_field() }}
+                    <a class="btn blue btn-small" href="{{ Route('usuario.editar', ['usuario' => $Usuario]) }}">Alterar dados</a>
                     <a class="btn red btn-small" href="/"> Sair</a>
+                </form>
+
                 </p>
             </div>
         </div>

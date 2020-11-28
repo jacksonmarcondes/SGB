@@ -15,8 +15,8 @@ class AddEmprestimoTable extends Migration
     {
         Schema::create('Emprestimo', function (Blueprint $table) {
             $table->dateTime('dataPrevista');
-            $table->dateTime('dataEmprestimo');
-            $table->dateTime('dataDevolucao');
+            $table->dateTime('dataEmprestimo')->nullable();
+            $table->dateTime('dataDevolucao')->nullable();
             $table->unsignedBigInteger('reserva')->nullable();
 
         });

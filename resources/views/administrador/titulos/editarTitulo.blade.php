@@ -6,7 +6,6 @@
                 <div class="col m12">
                     <span class="card-title black-text">Titulo editar</span>
                 </div>
-
             </div>
             <div class="row">
                 <form method="POST" action="{{Route('titulo.gravarEdicao',['titulo' => $TituloEditar])}}">

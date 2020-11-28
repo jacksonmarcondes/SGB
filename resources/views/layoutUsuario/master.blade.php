@@ -19,9 +19,10 @@
 
 <div class=" row">
     <div class="col m1">
-        <div class="card transparent" >
+        <div class="card transparent z-depth-0" >
             <div class="card-content white-text right-align">
                 <p>
+                    <br>
                     <img src="{{asset ('assets/images/Livro.png')}}" height="50px" width="50px" alt="Livro"/>
                 </p>
             </div>
@@ -29,30 +30,29 @@
 
     </div>
     <div class="col m6">
-        <div class="card transparent">
+        <div class="card transparent z-depth-0">
             <div class="card-content white-text">
                 <p>
-                <h5>Bem vindo, {{$Usuario->nome}}</h5>
+                <h4>Bem vindo, {{$Usuario->nome}}</h4>
                 </p>
             </div>
         </div>
 
     </div>
     <div class="col m5">
+        <br>
         <div class="card blue-grey lighten-5 hoverable" >
+
             <div class="card-content white-text">
                 <div class="row">
                     <div class="col m5 black-text center">
-                        Você possui R$ 0,00 em multas por atraso
+                        Você possui R$ {{number_format($multa,2,",",".")}} em multas por atraso
                     </div>
                     <div class="col m7 right-align">
                         <button class="btn blue"> Alterar dados</button>
                         <a class="btn red" href="/"> Sair</a>
                     </div>
-
                 </div>
-
-
             </div>
         </div>
     </div>

@@ -22,6 +22,12 @@
         <div class="card blue-grey lighten-5 hoverable">
             <div class="card-content white-text">
                 <span class="card-title center"><img src="{{asset ('assets/images/Livro.png')}}" alt="Livro"/></span>
+
+                <div class="row">
+                    @if(session()->has('message'))
+                        <div class="center"><span class="red-text">{{ session()->get('message') }}</span></div>
+                    @endif
+                </div>
                 <form method="POST" action="/login">
                     @csrf
                     <div class="row">

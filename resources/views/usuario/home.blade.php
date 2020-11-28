@@ -5,12 +5,18 @@
             <div class="card blue-grey lighten-5 hoverable">
                 <div class="card-content white-text">
                     <span class="card-title black-text">Títulos disponíveis para retirada</span>
+                    @if(session()->has('message'))
                     <div class="row">
-                        @if(session()->has('message'))
-                            <span class="black-text">{{ session()->get('message') }}</span>
-                        @endif
+                        <div class="col s12 m6">
+                            <div class="card blue-grey darken-3">
+                                <div class="card-content white-text">
+                                        <span class="white-text">{{ session()->get('message') }}</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row">
+                    @endif
+                    <div class="row" style="">
                         @foreach($titulosDisponiveis as $titulo)
                             <div class="col s12 m4">
                                 <div class="card blue-grey darken-3">

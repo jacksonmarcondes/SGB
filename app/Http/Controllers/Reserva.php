@@ -10,6 +10,7 @@ use App\Models\Usuario as Usuario;
 use App\Models\Reserva as ReservaModel;
 use App\Models\Titulo as Titulo;
 use Illuminate\Support\Facades\Redirect;
+use App\Models\Emprestimo as EmprestimoModel;
 
 class Reserva extends Controller
 {
@@ -21,15 +22,19 @@ class Reserva extends Controller
             'dataReserva' => $dataReserva
         ]);
         $reserva->save();
-        \Session::flash('message', 'Etapa apagada com sucesso!');
-        \Session::flash('class', 'success');
+        $dataReserva = Carbon::now();
+        $emprestimo = new EmprestimoModel([
+            'dataPrevista' => $dataReserva->addDays(7),
+            'reserva' => $reserva->codigoReserva,
+        ]);
+        $emprestimo->save();
         return redirect()->route('home')->with('message', 'Reserva realizada com sucesso!');
     }
 
     public function listarReservas(Request $request) : View {
         return view('administrador.reservas.listarReservas',[
             'Usuario' => Usuario::where('codigoUsuario',session('codigo_usuario'))->first(),
-            'reservas' => ReservaModel::all()
+            'reservas' => ReservaModel::with('Emprestimo')->with('Titulo')->with('Usuario')->get()
         ]);
     }
 }

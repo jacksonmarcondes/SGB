@@ -36,7 +36,13 @@ class Titulo extends Controller
     }
 
     public function excluirTitulo (TituloModel $Titulo) : RedirectResponse {
-        $Titulo->delete();
+        try {
+            $Titulo->delete();
+        }
+        catch (\Exception $exception){
+            return redirect()->route('titulo.listar')->with('message', 'Ops... Este livro possui reserva e não pode ser excluído até que ela seja finalizada!');
+        }
+
         return redirect()->route('titulo.listar');
     }
 

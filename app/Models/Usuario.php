@@ -14,6 +14,7 @@ class Usuario extends Model
         'tipo',
         'nome',
         'senha',
-        'email'
+        'email',
+        'ativo'
     ];
 }

@@ -18,7 +18,8 @@ class AddUsuarioTable extends Migration
             $table->char('nome', 100);
             $table->string('email', 100);
             $table->string('senha', 255);
-            $table->enum('tipo', ['administrador', 'usuario']);
+            $table->enum('tipo', ['administrador', 'usuario'])->default('usuario');
+            $table->boolean('ativo')->default(1);
         });
     }
 
