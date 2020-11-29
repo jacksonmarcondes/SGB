@@ -1,61 +1,59 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+##SGB – Sistema de Gerenciamento de Bibliotecas
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<p>
+Este projeto tem como objetivo, disponibilizar para usuarios, a reserva de livros em uma biblioteca.
+
+Ele está dividido em dois grandes módulos, são eles:
+- Administrativo
+- Reservas
+
+No painel de reservas, o usuário comum faz seu login, através de um e-mail e senha previamente cadastrados.
+Assim, o usuário consegue visualizar os livros que estão disponíveis para reserva de locação.
+
+No painel administrativo, o usuário administrador faz seu login e consegue gerenciar todo o sitema, desde cadastro de
+ novos livros, cadastro de usuários, gestão de reservas. Também consegue alterar os cadastros.
 </p>
 
-## About Laravel
+<p>
+**Informações sobre ambiente do projeto:**<br>
+- Framework: Laravel 8.x<br>
+- PHP 7.4.12 (cli) (built: Oct 29 2020 21:14:02) ( NTS )<br>
+- Banco de dados: mysql  Ver 8.0.22 for Linux on x86_64 (Source distribution)<br>
+- Sistema Operacional: Linux version 4.19.0-12-cloud-amd64 (debian-kernel@lists.debian.org) (gcc version 8.3.0 
+- (Debian 8.3.0-6)) #1 SMP Debian 4.19.152-1 (2020-10-18)<br>
+- Memória: 1gb<br>
+- cpu: 2vCpu
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Não essencial/ Não é requisito:**<br>
+Para garantir que o projeto esteja sempre disponível, utilizamos serviços de computação em núvem.
+<br>
+Utilizamos como plataforma base o Google Cloud Platform e uma imagem de máquina que possuí todos os requisitos pré-instalados.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**Acesso ao projeto:**
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+http://35.231.93.164/
+</p>
 
-## Learning Laravel
+<p>
+Para o portal de demonstração, cadastramos alguns usuários base, para que seja possível testar todas as funcionalidades
+ do painel.
+ 
+ Usuário administrador:<br>
+ e-mail: administrador@sgb.com
+ senha: 123
+ 
+ Usuário comum:<br>
+ e-mail: usuario@sgb.com
+ senha: usuario
+</p>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Para a instalação do projeto, é necessário ter um ambiente compativel como o descrito acima.
 
-## Laravel Sponsors
+**Documentações utilizadas no desenvolvimento:**
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+https://laravel.com/docs/8.x <br>
+https://materializecss.com/ <br>
+https://docs.bitnami.com/google/infrastructure/lamp/ <br>
+https://docs.bitnami.com/ibm/infrastructure/lamp/get-started/use-laravel/ <br>
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

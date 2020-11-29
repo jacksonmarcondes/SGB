@@ -21,10 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ba082506-c5a4-4a59-969b-16b22f47ebad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/homeUsuario.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/homeUsuario.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layoutAdministrador/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layoutAdministrador/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layoutUsuario/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layoutUsuario/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_28_155027_add_basic_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_28_155027_add_basic_users.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +194,7 @@
       <updated>1604960057081</updated>
       <workItem from="1604960058592" duration="5919000" />
       <workItem from="1605332425318" duration="3814000" />
-      <workItem from="1606519560984" duration="52903000" />
+      <workItem from="1606519560984" duration="56308000" />
     </task>
     <servers />
   </component>

@@ -13,6 +13,16 @@ class AddBasicUsers extends Migration
      */
     public function up()
     {
+
+        DB::table('Usuario')->insert(
+            array(
+                'email' => 'administrador@sgb.com',
+                'senha' => md5('123'),
+                'tipo' => 'administrador',
+                'nome' => 'Administrador Demo'
+            )
+        );
+
         DB::table('Usuario')->insert(
             array(
                 'email' => 'jackson@sgb.com',
